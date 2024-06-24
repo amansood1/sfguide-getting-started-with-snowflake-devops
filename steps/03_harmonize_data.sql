@@ -127,7 +127,7 @@ where true
     and id_country = 'country/USA'
 group by city.geo_id, city.geo_name;
 
-create or alter TABLE GOLD.VACATION_SPOTS_Modified (
+create or alter TABLE GOLD.VACATION_SPOTS (
 	CITY VARCHAR(16777216),
 	AIRPORT VARCHAR(16777216),
 	CO2_EMISSIONS_KG_PER_PERSON FLOAT,

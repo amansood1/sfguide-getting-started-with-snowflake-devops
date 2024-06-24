@@ -1,19 +1,19 @@
 use role accountadmin;
 
--- declarative target table of pipeline
-create or alter table vacation_spots (
-    city varchar
-  , airport varchar
-  , co2_emissions_kg_per_person float
-  , punctual_pct float
-  , avg_temperature_air_f float
-  , avg_relative_humidity_pct float
-  , avg_cloud_cover_pct float
-  , precipitation_probability_pct float
-  , aquarium_cnt int
-  , zoo_cnt int
-  , korean_restaurant_cnt int
-) data_retention_time_in_days = 1;
+-- -- declarative target table of pipeline
+-- create or alter table vacation_spots (
+--     city varchar
+--   , airport varchar
+--   , co2_emissions_kg_per_person float
+--   , punctual_pct float
+--   , avg_temperature_air_f float
+--   , avg_relative_humidity_pct float
+--   , avg_cloud_cover_pct float
+--   , precipitation_probability_pct float
+--   , aquarium_cnt int
+--   , zoo_cnt int
+--   , korean_restaurant_cnt int
+-- ) data_retention_time_in_days = 1;
 
 -- task to merge pipeline results into target table
 create or alter task vacation_spots_update
