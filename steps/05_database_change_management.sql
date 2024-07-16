@@ -52,6 +52,8 @@ Commit your changes to the "dev" branch before continuing
 ---------------------------------------------------------
 */
 
+-- use database QUICKSTART_PROD
+
 use role accountadmin;
 -- Fetch changes from GitHub
 alter git repository quickstart_common.public.quickstart_repo fetch;
